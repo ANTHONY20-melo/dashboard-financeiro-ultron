@@ -1,8 +1,8 @@
 {
-  "buildCommand": "python gerar_dashboard.py",
+  "buildCommand": "echo 'Static site - no build needed'",
   "outputDirectory": ".",
   "devCommand": "python -m http.server 8000",
-  "installCommand": "pip install -r requirements.txt",
+  "installCommand": "echo 'No install needed'",
   "framework": null,
   "rewrites": [
     {
