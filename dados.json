@@ -1,0 +1,100 @@
+{
+  "titulo": "Controle de Dívidas e Receitas",
+  "mes": "NOVEMBRO/2026",
+  "rescisaoCorrigida": 8151.95,
+  "rescisaoErrada": 8364.58,
+  "receitas": [
+    { "desc": "Rescisão Blue Informática", "bruto": 8151.95, "dizimo": 815.20, "liquido": 7336.75, "obs": "" },
+    { "desc": "Multa 40% FGTS (liberar na Caixa)", "bruto": 2126.26, "dizimo": 212.63, "liquido": 1913.63, "obs": "" },
+    { "desc": "Renda extra mensal", "bruto": 150.00, "dizimo": 15.00, "liquido": 135.00, "obs": "" },
+    { "desc": "Saque-aniversário FGTS (Dez/2026)", "bruto": 2744.70, "dizimo": 274.47, "liquido": 2470.23, "obs": "" },
+    { "desc": "Salário + 13º salário (Dez/2026)", "bruto": 2740.00, "dizimo": 274.00, "liquido": 2466.00, "obs": "" }
+  ],
+  "totalReceitas": { "bruto": 15912.91, "dizimo": 1591.29, "liquido": 14321.62 },
+  "prioridades": [
+    { "desc": "Tia", "valor": 400.00, "obs": "8 parcelas — 1ª paga em 10/nov" },
+    { "desc": "Habitação", "valor": 260.00, "obs": "Fixo por 15 anos" },
+    { "desc": "Tenda", "valor": 57.00, "obs": "" },
+    { "desc": "Sidney", "valor": 188.00, "obs": "Última parcela" },
+    { "desc": "Gastos extra mercado", "valor": 297.53, "obs": "Gasto único (não recorre)" }
+  ],
+  "subtotalPrioridades": 1202.53,
+  "pessoais": [
+    { "desc": "Caixa", "valor": 638.00, "obs": "Próxima parcela: 320" },
+    { "desc": "Nubank", "valor": 430.00, "obs": "Próxima parcela: 306" },
+    { "desc": "Hiper", "valor": 58.00, "obs": "Acaba este mês" },
+    { "desc": "Magalu", "valor": 198.00, "obs": "Acaba este mês" },
+    { "desc": "LeBiscuit", "valor": 148.00, "obs": "Próxima parcela: 95" },
+    { "desc": "Brasilcard", "valor": null, "obs": "Valor a confirmar no extrato" },
+    { "desc": "Santander", "valor": 100.00, "obs": "Fixo" },
+    { "desc": "Empréstimo PicPay", "valor": 150.55, "obs": "Faltam 4 parcelas" },
+    { "desc": "Claro", "valor": 38.88, "obs": "Fixo" },
+    { "desc": "Jeitto", "valor": 136.00, "obs": "Acaba este mês" },
+    { "desc": "Serasa BB", "valor": 186.00, "obs": "Faltam 3 parcelas" },
+    { "desc": "Serasa Itaú", "valor": 54.00, "obs": "Faltam 2 parcelas" },
+    { "desc": "Will", "valor": 198.00, "obs": "Última parcela" },
+    { "desc": "Lisa", "valor": 85.00, "obs": "1 de 4 parcelas" },
+    { "desc": "Vé", "valor": 55.00, "obs": "Acaba este mês" },
+    { "desc": "PicPay", "valor": 533.38, "obs": "Acaba este mês" }
+  ],
+  "subtotalPessoais": 3008.81,
+  "totalContasNovembro": 4211.34,
+  "quitaveis": [
+    { "desc": "Empréstimo PAN 1", "valor": 2054.45, "obs": "Pedir valor atualizado com desconto antes de quitar" },
+    { "desc": "Empréstimo PAN 2", "valor": 2006.35, "obs": "Pedir valor atualizado com desconto antes de quitar" },
+    { "desc": "Empréstimo PAN 3", "valor": 1185.83, "obs": "Pedir valor atualizado com desconto antes de quitar" },
+    { "desc": "Empréstimo BMG", "valor": 1000.00, "obs": "Pedir valor atualizado com desconto antes de quitar" },
+    { "desc": "Empréstimo C6", "valor": null, "obs": "A confirmar — pedir valor atualizado com desconto" }
+  ],
+  "subtotalQuitaveis": 6246.63,
+  "investimentos": [
+    { "mes": "Nov/2026", "sobra": null, "deposito": null },
+    { "mes": "Dez/2026", "sobra": null, "deposito": 150.00 },
+    { "mes": "Jan/2027", "sobra": null, "deposito": 150.00 },
+    { "mes": "Fev/2027", "sobra": null, "deposito": 150.00 }
+  ],
+  "comprasPrevistas": [
+    { "desc": "Compra de roupas", "valor": 500.00 },
+    { "desc": "Investimento fixo mensal a partir de dez/2026", "valor": 150.00 }
+  ],
+  "metaReservaMensal": 150.00,
+  "planejamento": {
+    "2026": {
+      "01": { "receita": null, "despesa": null, "obs": "" },
+      "02": { "receita": null, "despesa": null, "obs": "" },
+      "03": { "receita": null, "despesa": null, "obs": "" },
+      "04": { "receita": null, "despesa": null, "obs": "" },
+      "05": { "receita": null, "despesa": null, "obs": "" },
+      "06": { "receita": null, "despesa": null, "obs": "" },
+      "07": { "receita": null, "despesa": null, "obs": "" },
+      "08": { "receita": null, "despesa": null, "obs": "" },
+      "09": { "receita": null, "despesa": null, "obs": "" },
+      "10": { "receita": null, "despesa": null, "obs": "" },
+      "11": { "receita": 9385.38, "despesa": 4711.34, "obs": "Receitas de nov (rescisão 7.336,75 + multa FGTS 1.913,63 + renda extra 135,00). Despesas: contas 4.211,34 + roupas 500,00." },
+      "12": { "receita": 4936.23, "despesa": null, "obs": "Saque-aniversário FGTS 2.470,23 + salário/13º 2.466,00 (líquidos). Informar as despesas de dezembro." }
+    },
+    "2027": {
+      "01": { "receita": null, "despesa": null, "obs": "Investimento fixo de 150,00 na caixinha." },
+      "02": { "receita": null, "despesa": null, "obs": "Investimento fixo de 150,00 na caixinha." },
+      "03": { "receita": null, "despesa": null, "obs": "" },
+      "04": { "receita": null, "despesa": null, "obs": "" },
+      "05": { "receita": null, "despesa": null, "obs": "" },
+      "06": { "receita": null, "despesa": null, "obs": "" },
+      "07": { "receita": null, "despesa": null, "obs": "" },
+      "08": { "receita": null, "despesa": null, "obs": "" },
+      "09": { "receita": null, "despesa": null, "obs": "" },
+      "10": { "receita": null, "despesa": null, "obs": "" },
+      "11": { "receita": null, "despesa": null, "obs": "" },
+      "12": { "receita": null, "despesa": null, "obs": "" }
+    }
+  },
+  "observacoes": [
+    "Rescisão corrigida: R$ 8.151,95 (não R$ 8.364,58) — a diferença corresponde a um débito de cerca de R$ 200 no Santander, já descontado.",
+    "Descontar 10% (dízimo) no momento do recebimento.",
+    "Projeto carro 2027: primeiro acumular reserva — não usar todo o dinheiro na entrada.",
+    "Antes de quitar qualquer empréstimo, pedir o valor atualizado com desconto (muitas vezes sai mais barato).",
+    "Brasilcard e C6: confirmar o valor exato no app/extrato antes de pagar.",
+    "Documento de planejamento pessoal — confirme os valores finais com os extratos bancários."
+  ],
+  "fonte": "DOC-20261110-WA0109.pdf"
+}

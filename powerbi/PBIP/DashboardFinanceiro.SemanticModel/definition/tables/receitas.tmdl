@@ -1,0 +1,38 @@
+table receitas
+	description: Receitas de novembro/2026 com dízimo de 10% e valores líquidos. Fonte: receitas.csv (gerado de dados.json, extraído do PDF DOC-20261110-WA0109.pdf).
+
+	column Descrição
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Descrição
+
+	column Valor Bruto
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Valor Bruto
+
+	column Dízimo
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Dízimo
+
+	column Líquido
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Líquido
+
+	column Observação
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Observação
+
+	partition receitas = m
+		mode: import
+		source =
+			let
+				Fonte = Csv.Document(File.Contents("C:\Users\ANTHONY\Desktop\PROJETOS IA\sexta-feira\dashboard-financeiro\powerbi\receitas.csv"), [Delimiter = ";", Encoding = 65001]),
+				Cabecalhos = Table.PromoteHeaders(Fonte, [PromoteAllScalars = true]),
+				Tipos = Table.TransformColumnTypes(Cabecalhos, {{"Valor Bruto", type number}, {"Dízimo", type number}, {"Líquido", type number}}, "pt-BR"),
+				SemTotal = Table.SelectRows(Tipos, each [#"Descrição"] <> "TOTAL PREVISTO")
+			in
+				SemTotal

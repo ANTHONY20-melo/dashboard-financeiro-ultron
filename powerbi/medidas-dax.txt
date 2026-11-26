@@ -1,0 +1,93 @@
+-- ============================================================
+-- MEDIDAS DAX — Dashboard Financeiro Novembro/2026
+-- Cole cada bloco como "Nova Medida" (clique direito na tabela resumo)
+-- ============================================================
+
+Receita Bruta Total =
+SUM ( receitas[Valor Bruto] )
+
+----------------------------------------
+
+Dízimo Total =
+SUM ( receitas[Dízimo] )
+
+----------------------------------------
+
+Receita Líquida Total =
+SUM ( receitas[Líquido] )
+
+----------------------------------------
+
+Total Prioridades =
+CALCULATE (
+    SUM ( despesas[Valor] ),
+    despesas[Categoria] = "Prioridade"
+)
+
+----------------------------------------
+
+Total Pessoais =
+CALCULATE (
+    SUM ( despesas[Valor] ),
+    despesas[Categoria] = "Pessoal"
+)
+
+----------------------------------------
+
+Contas de Novembro =
+[Total Prioridades] + [Total Pessoais]
+
+----------------------------------------
+
+Roupas Previsto =
+CALCULATE (
+    SUM ( despesas[Valor] ),
+    despesas[Categoria] = "Extra"
+)
+
+----------------------------------------
+
+Sobra Prevista =
+[Receita Líquida Total] - [Contas de Novembro] - [Roupas Previsto]
+
+----------------------------------------
+
+Total Quitáveis =
+CALCULATE (
+    SUM ( despesas[Valor] ),
+    despesas[Categoria] = "Quitável"
+)
+
+----------------------------------------
+
+Sobra Após Quitar Tudo =
+[Sobra Prevista] - [Total Quitáveis]
+
+----------------------------------------
+
+Rescisão Corrigida = 8151.95
+
+----------------------------------------
+
+Reserva Acumulada =
+SUM ( investimentos[Acumulado] )
+
+----------------------------------------
+
+% Comprometido =
+DIVIDE ( [Contas de Novembro], [Receita Líquida Total] )
+
+----------------------------------------
+
+Itens A Confirmar =
+CALCULATE (
+    COUNTROWS ( despesas ),
+    despesas[Status] = "A confirmar"
+)
+
+-- ============================================================
+-- FÓRMULA DE FORMATAÇÃO (usar no cartão como medida, se quiser
+-- "R$ 14.321,62" sempre):
+--   Receita Líquida Texto =
+--       FORMAT ( [Receita Líquida Total], "R$ #,0.00" )
+-- ============================================================
